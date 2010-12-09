@@ -14,6 +14,8 @@ h1#site-name {
   margin-bottom: 1.5em;
 }
 
+#body {background-color: #fff;}
+
 /*
 ** Formatting for administration page
 **
