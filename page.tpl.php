@@ -12,7 +12,7 @@
   <?php print $scripts; ?>
 </head>
 
-<body>
+<body class="<?php print $body_classes; ?> show-grid">
    <!-- class="<?php print $body_classes; ?> show-grid" -->
   <div id="page" class="container-16 clear-block">
 
@@ -41,13 +41,13 @@
     </div>
 
 
-    <div id="site-subheader" class="prefix-4 suffix-1 clear-block alpha">
+    <div id="site-subheader" class="prefix-2 clear-block alpha">
     <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div> 
 
     </div>
 
 
-    <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
+    <div id="main" class="column grid-16">
       <?php print $breadcrumb; ?>
       <?php if ($title): ?>
         <h1 class="title prefix-2" id="page-title"><?php print $title; ?></h1>
@@ -65,19 +65,27 @@
   
       <?php print $feed_icons; ?>
     </div>
+    
+    <div id="sub-content" class="container-16 clear-block alpha">
+       <div id="sub-1" class="grid-3 prefix-1"> <?php print $left; ?></div>
+       <div id="sub-2" class="grid-3 prefix-1"><?php print $left; ?></div>
+       <div id="sub-3" class="grid-3 prefix-1"><?php print $left; ?></div>
+       <div id="sub-4"class="grid-3 prefix-1 omega"><?php print $left; ?></div>
+       <!-- reprinting $left in order to play with grid -->
+     </div>
 
-  <?php if ($left): ?>
-    <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $right, 3); ?>">
-      <?php print $left; ?>
-    </div>
-  <?php endif; ?>
+  <!-- <?php if ($left): ?>
+     <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $right, 3); ?>">
+       <?php print $left; ?>
+     </div>
+   <?php endif; ?>
 
-  <?php if ($right): ?>
-    <div id="sidebar-right" class="column sidebar region grid-3">
-      <?php print $right; ?>
-    </div>
-  <?php endif; ?>
-
+   <?php if ($right): ?>
+     <div id="sidebar-right" class="column sidebar region grid-3">
+       <?php print $right; ?>
+     </div>
+   <?php endif; ?> -->
+ 
 
   <div id="footer" class="prefix-1 suffix-1">
     <?php if ($footer): ?>
