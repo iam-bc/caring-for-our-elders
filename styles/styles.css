@@ -5,16 +5,30 @@ h1#site-name {
 }
 
 #site-header,
-#site-subheader,
 #footer-region,
 .column,
 .node,
 .comment,
 .block {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+}
+
+#site-subheader{
+  margin-bottom: 2.75em;
 }
 
 #body {background-color: #fff;}
+
+#branding {
+	height: 	130px; 
+	background: url(../images/janettitle.png) no-repeat;
+	}
+#site-slogan {
+	padding-top: 80px;
+	font-size: 18px;
+	text-align:left;
+	}
+	
 
 /*
 ** Formatting for administration page

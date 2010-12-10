@@ -22,6 +22,7 @@ body {
   	font: 13px/1.5 'Times New Roman', Georgia, Garamond, 'Didot', serif;
   	letter-spacing: 2px;
 	color: #000;
+	text-align: justify;
 }
 
 
@@ -87,4 +88,18 @@ table,
 address,
 fieldset {
   margin-bottom: 20px;
+}
+
+a:link,
+a:visited {
+	color:			#000;  
+	text-decoration: none;
+	font-weight:	600;
+	font-size: 15px;
+	padding: 0px 10px;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: 			#0E85AA; /* peacock blue */}
 }

@@ -16,24 +16,23 @@
   <div id="page" class="container-16 clear-block">
 
     <div id="site-header" class="clear-block">
-      <div id="branding" class="grid-4 clear-block">
+      <div id="branding" class="grid-16 clear-block">
+         
+          <?php if ($site_slogan): ?>
+              <div id="site-slogan" class="grid-8 push-2 alpha"><?php print $site_slogan; ?></div>
+            <?php endif; ?>
+      <!-- the linked logo is not working on my localhost. i have no idea why.  maybe because
+      it is symlink? inserting logo into background of branding for now. 
+      
       <?php if ($linked_logo_img): ?>
-        <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
-      <?php endif; ?>
-      <?php if ($linked_site_name): ?>
-        <h1 id="site-name" class="grid-3 omega"><?php print $linked_site_name; ?></h1>
-      <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <div id="site-slogan" class="grid-3 omega"><?php print $site_slogan; ?></div>
-      <?php endif; ?>
-      </div>
+              <span id="logo" class="grid-12 alpha"><?php print $linked_logo_img; ?></span>
+            <?php endif; ?>
+            <?php if ($linked_site_name): ?>
+              <h1 id="site-name" class="grid-3 omega"><?php print $linked_site_name; ?></h1>
+            <?php endif; ?>
+           
+            </div> -->
 
-    <?php if ($main_menu_links || $secondary_menu_links): ?>
-      <div id="site-menu" class="grid-12">
-        <?php print $main_menu_links; ?>
-        <?php print $secondary_menu_links; ?>
-      </div>
-    <?php endif; ?>
 
     <?php if ($search_box): ?>
       <div id="search-box" class="grid-6 prefix-10"><?php print $search_box; ?></div>
@@ -41,25 +40,16 @@
     </div>
 
 
-    <div id="site-subheader" class="prefix-1 suffix-1 clear-block">
-    <?php if ($mission): ?>
-      <div id="mission" class="<?php print ns('grid-14', $header, 7); ?>">
-        <?php print $mission; ?>
-      </div>
-    <?php endif; ?>
+    <div id="site-subheader" class="prefix-2 suffix-1 clear-block alpha">
+    <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div> 
 
-    <?php if ($header): ?>
-      <div id="header-region" class="region <?php print ns('grid-14', $mission, 7); ?> clear-block">
-        <?php print $header; ?>
-      </div>
-    <?php endif; ?>
     </div>
 
 
     <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
       <?php print $breadcrumb; ?>
       <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
+        <h1 class="title prefix-1" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php if ($tabs): ?>
         <div class="tabs"><?php print $tabs; ?></div>
@@ -67,10 +57,11 @@
       <?php print $messages; ?>
       <?php print $help; ?>
 
-      <div id="main-content" class="region clear-block">
+      <div id="main-content" class="region clear-block prefix-1 suffix-1">
+    
         <?php print $content; ?>
       </div>
-
+  
       <?php print $feed_icons; ?>
     </div>
 
