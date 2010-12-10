@@ -12,7 +12,8 @@
   <?php print $scripts; ?>
 </head>
 
-<body class="<?php print $body_classes; ?> show-grid">
+<body>
+   <!-- class="<?php print $body_classes; ?> show-grid" -->
   <div id="page" class="container-16 clear-block">
 
     <div id="site-header" class="clear-block">
@@ -40,7 +41,7 @@
     </div>
 
 
-    <div id="site-subheader" class="prefix-2 suffix-1 clear-block alpha">
+    <div id="site-subheader" class="prefix-4 suffix-1 clear-block alpha">
     <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div> 
 
     </div>
@@ -49,7 +50,7 @@
     <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
       <?php print $breadcrumb; ?>
       <?php if ($title): ?>
-        <h1 class="title prefix-1" id="page-title"><?php print $title; ?></h1>
+        <h1 class="title prefix-2" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php if ($tabs): ?>
         <div class="tabs"><?php print $tabs; ?></div>
@@ -57,7 +58,7 @@
       <?php print $messages; ?>
       <?php print $help; ?>
 
-      <div id="main-content" class="region clear-block prefix-1 suffix-1">
+      <div id="main-content" class="region grid-12 prefix-2 suffix-2 alpha">
     
         <?php print $content; ?>
       </div>
