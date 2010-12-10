@@ -12,7 +12,8 @@
   <?php print $scripts; ?>
 </head>
 
-<body class="<?php print $body_classes; ?> show-grid">
+<body>
+   <!-- class="<?php print $body_classes; ?> show-grid" -->
   <div id="page" class="container-16 clear-block">
 
     <div id="site-header" class="clear-block">
@@ -49,7 +50,7 @@
     <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
       <?php print $breadcrumb; ?>
       <?php if ($title): ?>
-        <h1 class="title prefix-1" id="page-title"><?php print $title; ?></h1>
+        <h1 class="title prefix-8" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php if ($tabs): ?>
         <div class="tabs"><?php print $tabs; ?></div>
