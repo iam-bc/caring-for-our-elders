@@ -101,6 +101,10 @@ a:visited {
 	font-weight:	600;
 	font-size: 		17px;
 	padding: 		0px 10px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	float: left;
+	text-align: left;
 }
 
 a:hover {
