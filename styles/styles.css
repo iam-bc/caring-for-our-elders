@@ -5,22 +5,27 @@ h1#site-name {
 }
 
 #site-header,
-#footer-region,
 .column,
 .node,
 .comment,
-.block {
+.block, {
   margin-bottom: 1em;
 }
 
-#site-subheader{
+#site-subheader {
   margin-bottom: 2.75em;
 }
+
+#footer-region{
+  margin-top: 3.75em; 
+border-top: 3px double #E8CD07;}
+
+
 
 #body {background-color: #fff;}
 
 #branding {
-	height: 	130px; 
+	height: 	150px; 
 	background: url(../images/janettitle.png) no-repeat;
 	}
 #site-slogan {

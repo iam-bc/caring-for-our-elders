@@ -12,7 +12,7 @@
   <?php print $scripts; ?>
 </head>
 
-<body class="<?php print $body_classes; ?> show-grid">
+<body>
    <!-- class="<?php print $body_classes; ?> show-grid" -->
   <div id="page" class="container-16 clear-block">
 
@@ -66,11 +66,11 @@
       <?php print $feed_icons; ?>
     </div>
     
-    <div id="sub-content" class="container-16 clear-block alpha">
-       <div id="sub-1" class="grid-3 prefix-1"> <?php print $left; ?></div>
-       <div id="sub-2" class="grid-3 prefix-1"><?php print $left; ?></div>
-       <div id="sub-3" class="grid-3 prefix-1"><?php print $left; ?></div>
-       <div id="sub-4"class="grid-3 prefix-1 omega"><?php print $left; ?></div>
+    <div id="sub-content" class="grid-13 push-2  clear-block alpha">
+       <div id="sub-1" class="grid-3"> <?php print $left; ?></div>
+       <div id="sub-2" class="grid-3 "><?php print $left; ?></div>
+       <div id="sub-3" class="grid-3"><?php print $left; ?></div>
+       <div id="sub-4"class="grid-3"><?php print $left; ?></div>
        <!-- reprinting $left in order to play with grid -->
      </div>
 
@@ -87,20 +87,20 @@
    <?php endif; ?> -->
  
 
-  <div id="footer" class="prefix-1 suffix-1">
-    <?php if ($footer): ?>
-      <div id="footer-region" class="region grid-14 clear-block">
-        <?php print $footer; ?>
-      </div>
-    <?php endif; ?>
+ <div id="footer" class="prefix-1 suffix-1">
+    
+        <div id="footer-region" class="region grid-12 push-1 clear-block">
+          Image contact information......<?php print $footer; ?>
+        </div>
+      
 
-    <?php if ($footer_message): ?>
-      <div id="footer-message" class="grid-14">
-        <?php print $footer_message; ?>
-      </div>
-    <?php endif; ?>
-  </div>
-
+      <?php if ($footer_message): ?>
+        <div id="footer-message" class="grid-8 push-7">
+         your copyright message <?php print $footer_message; ?>
+        </div>
+      <?php endif; ?>
+    </div> 
+  
 
   </div>
   <?php print $closure; ?>
