@@ -38,7 +38,8 @@ hr {
 ----------------------------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 25px;
+  	font-size: 25px;
+  	color:	#0E85AA;
 }
 
 h2 {
@@ -92,14 +93,13 @@ fieldset {
 
 a:link,
 a:visited {
-	color:			#000;  
+	color:			#0E85AA;  /* peacock blue */
 	text-decoration: none;
 	font-weight:	600;
-	font-size: 15px;
-	padding: 0px 10px;
+	font-size: 		15px;
+	padding: 		0px 10px;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: 			#0E85AA; /* peacock blue */}
-}
+	text-decoration: underline;}
+	
