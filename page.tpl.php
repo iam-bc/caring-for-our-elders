@@ -20,7 +20,7 @@
       <div id="branding" class="grid-16 clear-block">
          
           <?php if ($site_slogan): ?>
-              <div id="site-slogan" class="grid-8 push-2 alpha"><?php print $site_slogan; ?></div>
+              <div id="site-slogan" class="grid-9 push-2 alpha"><?php print $site_slogan; ?></div>
             <?php endif; ?>
       <!-- the linked logo is not working on my localhost. i have no idea why.  maybe because
       it is symlink? inserting logo into background of branding for now. 
