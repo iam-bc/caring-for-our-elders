@@ -71,21 +71,21 @@
     </div>
     
     <div id="sub-content" class="grid-13 push-2  clear-block alpha">
-       <div id="sub-1" class="grid-3"> 
-            <h3 id="subtitle">
-            <?php print $node->content['field_lets_talk']['field']['#title'] ?> </h2>
+       <div id="sub" class="grid-3"> 
+            <h4 id="subtitle">
+            <?php print $node->content['field_lets_talk']['field']['#title'] ?> </h4>
             <?php echo $node->field_lets_talk[0]['view'];?> </div>
-       <div id="sub-2" class="grid-3 ">
-            <h3 id="subtitle">
-            <?php print $node->content['field_take_care']['field']['#title'] ?> </h2>
+       <div id="sub" class="grid-3 ">
+            <h4 id="subtitle">
+            <?php print $node->content['field_take_care']['field']['#title'] ?> </h4>
             <?php echo $node->field_take_care[0]['view'];?></div>
-       <div id="sub-3" class="grid-3">
-            <h3 id="subtitle">
-            <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h2>
+       <div id="sub2" class="grid-3">
+            <h4 id="subtitle">
+            <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h4>
             <?php echo $node->field_whichwayhome[0]['view'];?></div>
-       <div id="sub-4"class="grid-3">
-             <h3 id="subtitle">
-             <?php print $node->content['field_canwetalk']['field']['#title'] ?> </h2>
+       <div id="sub"class="grid-3">
+             <h4 id="subtitle">
+             <?php print $node->content['field_canwetalk']['field']['#title'] ?> </h4>
              <?php echo $node->field_canwetalk[0]['view'];?></div>
  
      </div>
@@ -106,13 +106,13 @@
  <div id="footer" class="prefix-1 suffix-1">
     
         <div id="footer-region" class="region grid-12 push-1 clear-block">
-          Image contact information......<?php print $footer; ?>
+        <?php print $footer; ?>
         </div>
       
 
       <?php if ($footer_message): ?>
-        <div id="footer-message" class="grid-8 push-7">
-         your copyright message <?php print $footer_message; ?>
+        <div id="footer-message" class="grid-12 push-1">
+        <center><?php print $footer_message; ?> </center>
         </div>
       <?php endif; ?>
     </div> 
