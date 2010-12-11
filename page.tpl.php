@@ -59,19 +59,35 @@
       <?php print $help; ?>
 
       <div id="main-content" class="region grid-12 prefix-2 suffix-2 alpha">
-    
-        <?php print $content; ?>
+    <!-- <div id="image" ><?php print $node->content['image_attach']['#value']; ?></div>
+           <div id="main-text"> <?php print $node->content['body']['#value']; ?> -->
+       <?php print $content; ?>
+          <!-- <?php print_r($node); ?> -->
+         </div>
+         
       </div>
   
       <?php print $feed_icons; ?>
     </div>
     
     <div id="sub-content" class="grid-13 push-2  clear-block alpha">
-       <div id="sub-1" class="grid-3"> <?php print $left; ?></div>
-       <div id="sub-2" class="grid-3 "><?php print $left; ?></div>
-       <div id="sub-3" class="grid-3"><?php print $left; ?></div>
-       <div id="sub-4"class="grid-3"><?php print $left; ?></div>
-       <!-- reprinting $left in order to play with grid -->
+       <div id="sub-1" class="grid-3"> 
+            <h3 id="subtitle">
+            <?php print $node->content['field_lets_talk']['field']['#title'] ?> </h2>
+            <?php echo $node->field_lets_talk[0]['view'];?> </div>
+       <div id="sub-2" class="grid-3 ">
+            <h3 id="subtitle">
+            <?php print $node->content['field_take_care']['field']['#title'] ?> </h2>
+            <?php echo $node->field_take_care[0]['view'];?></div>
+       <div id="sub-3" class="grid-3">
+            <h3 id="subtitle">
+            <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h2>
+            <?php echo $node->field_whichwayhome[0]['view'];?></div>
+       <div id="sub-4"class="grid-3">
+             <h3 id="subtitle">
+             <?php print $node->content['field_canwetalk']['field']['#title'] ?> </h2>
+             <?php echo $node->field_canwetalk[0]['view'];?></div>
+ 
      </div>
 
   <!-- <?php if ($left): ?>
