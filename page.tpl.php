@@ -70,23 +70,23 @@
       <?php print $feed_icons; ?>
     </div>
     
-    <div id="sub-content" class="grid-13 push-2  clear-block alpha">
-       <div id="sub" class="grid-3"> 
+    <div id="sub-content" class="grid-14 push-2 clear-block alpha">
+       <div id="sub" class="grid-4"> 
             <h4 id="subtitle">
             <?php print $node->content['field_lets_talk']['field']['#title'] ?> </h4>
             <?php echo $node->field_lets_talk[0]['view'];?> </div>
-       <div id="sub" class="grid-3 ">
+       <div id="sub" class="grid-4">
             <h4 id="subtitle">
             <?php print $node->content['field_take_care']['field']['#title'] ?> </h4>
             <?php echo $node->field_take_care[0]['view'];?></div>
-       <div id="sub2" class="grid-3">
+       <div id="sub" class="grid-4">
             <h4 id="subtitle">
             <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h4>
             <?php echo $node->field_whichwayhome[0]['view'];?></div>
-       <div id="sub"class="grid-3">
-             <h4 id="subtitle">
-             <?php print $node->content['field_canwetalk']['field']['#title'] ?> </h4>
-             <?php echo $node->field_canwetalk[0]['view'];?></div>
+       <!-- <div id="sub"class="grid-3">
+                   <h4 id="subtitle">
+                   <?php print $node->content['field_canwetalk']['field']['#title'] ?> </h4>
+                   <?php echo $node->field_canwetalk[0]['view'];?></div> -->
  
      </div>
 

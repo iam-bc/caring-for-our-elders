@@ -37,8 +37,10 @@ border-top: 3px double #E8CD07;}
 #sub, #sub2 {
 	word-spacing: .2px;
 	letter-spacing: .75px;
-		}	
-#sub {padding-top: 31px;}		
+	padding-bottom: 80px;
+	background: url(../images/twobirds.png) no-repeat;}
+	
+#sub {padding-top: 31px; }
 
 /*
 ** Formatting for administration page
