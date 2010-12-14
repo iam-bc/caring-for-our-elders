@@ -68,8 +68,8 @@
       <?php print $feed_icons; ?>
     </div>
     
-    <!-- <div id="sub-content" class="grid-15 push-2 clear-block alpha">
-       <div id="sub" class="grid-3 "> 
+    <div id="sub-content" class="grid-15 push-2 clear-block alpha">
+       <div id="sub" class="grid-3 suffix-1"> 
               <h4 id="subtitle">
                <?php print $node->content['field_take_care']['field']['#title'] ?> </h4>
             <?php echo $node->field_lets_talk[0]['view'];?> </div>
@@ -80,8 +80,8 @@
        <div id="sub3" class="grid-3 prefix-1">
             <h4 id="subtitle">
             <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h4>
-            <?php echo $node->field_whichwayhome[0]['view'];?></div> -->
-    
+            <?php echo $node->field_whichwayhome[0]['view'];?></div>
+       
  
      </div>
 

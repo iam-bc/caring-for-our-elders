@@ -68,20 +68,26 @@
       <?php print $feed_icons; ?>
     </div>
     
-    <!-- <div id="sub-content" class="grid-15 push-2 clear-block alpha">
-       <div id="sub" class="grid-3 "> 
-              <h4 id="subtitle">
-               <?php print $node->content['field_take_care']['field']['#title'] ?> </h4>
-            <?php echo $node->field_lets_talk[0]['view'];?> </div>
-       <div id="sub2" class="grid-3 prefix-1 suffix-1">
-           <h4 id="subtitle">
-             <?php print $node->content['field_lets_talk']['field']['#title'] ?> </h4>
-            <?php echo $node->field_take_care[0]['view'];?></div>
-       <div id="sub3" class="grid-3 prefix-1">
-            <h4 id="subtitle">
-            <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h4>
-            <?php echo $node->field_whichwayhome[0]['view'];?></div> -->
-    
+    <div id="sub-content" class="grid-12 push-2 clear-block alpha">
+      <div id="linkimage" class="grid-2">
+          <?php echo $node->field_imagelink1[0]['view'];?></div>
+       <div id="service" class="grid-9"> 
+              <h4 id="subtitle2">
+               <?php print $node->content['field_caremanage']['field']['#title'] ?> </h4>
+            <?php echo $node->field_caremanage[0]['view'];?> </div>
+        <div id="linkimage" class="grid-2"> 
+        <?php echo $node->field_imagelink2[0]['view'];?></div>
+       <div id="service" class="grid-9">
+           <h4 id="subtitle2">
+             <?php print $node->content['field_housing']['field']['#title'] ?> </h4>
+            <?php echo $node->field_housing[0]['view'];?></div>
+      <div id="linkimage" class="grid-2">
+          <?php echo $node->field_imagelink3[0]['view'];?></div>
+       <div id="service" class="grid-9">
+            <h4 id="subtitle2">
+            <?php print $node->content['field_communication']['field']['#title'] ?> </h4>
+            <?php echo $node->field_communication[0]['view'];?></div>
+       
  
      </div>
 
