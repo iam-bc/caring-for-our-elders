@@ -35,9 +35,9 @@
             </div> -->
 
 
-    <?php if ($search_box): ?>
-      <div id="search-box" class="grid-6 prefix-10"><?php print $search_box; ?></div>
-    <?php endif; ?>
+            <div id="search-box" class="grid-6 push-4">
+            <?php print $service_links; ?>
+            <?php print $search_box; ?></div>
     </div>
 
 

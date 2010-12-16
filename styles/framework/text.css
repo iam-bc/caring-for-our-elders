@@ -9,7 +9,7 @@
   Modifide for Drupal.
 */
 
-/* NOTES for Caring for Our Elders: 
+/* NOTES for Care for Our Elders: 
 	title font to be in Garamond 
 	colors: 0E85AA peacock blue
 			E8CD07 neutral yellow (kind of mars yellow)
@@ -113,4 +113,20 @@ a:hover {
 #subtitle, #subtitle1 {
 		color:		#424C84;
 		text-align: center;
-		}			
+		}	
+#subtitle2 {
+		color:		#424C84;
+		text-align: left;
+				}				
+		
+#navlist a {
+			padding: 3px 14px;
+		   	margin:0;
+				}
+
+#navlist li {
+			float: left;
+			padding:0;
+			margin:0;
+
+			}		

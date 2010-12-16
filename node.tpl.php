@@ -21,6 +21,7 @@
   <div class="content">
      <div id="image" ><?php print $node->content['image_attach']['#value']; ?></div>
          <div id="main-text"> <?php print $node->content['body']['#value']; ?>
+           
   </div>
 
   <?php if ($links): ?>

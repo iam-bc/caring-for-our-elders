@@ -18,29 +18,58 @@ h1#site-name {
 
 #footer-region{
   margin-top: 3.75em; 
-border-top: 3px double #E8CD07;}
-
+border-top: 3px double #E8CD07;
+}
+#search-box {
+	padding-top:30px;
+	text-align:left;
+	float:left;
+	}
+/* the .fom-item is to get rid of the search box text. this is a temporary solution only*/
+.form-item {
+		color:#fff;
+		margin-bottom:2px;
+		}		
+		
 #image {float:right;}
 
 #body {background-color: #fff;}
 
 #branding {
 	height: 	150px; 
-	background: url(../images/janettitle.png) no-repeat;
+	background: url(../images/janettitle3.png) no-repeat;
 	}
 #site-slogan {
-	padding-top: 80px;
+	padding-top: 88px;
 	font-size: 18px;
 	text-align:left;
 	border-bottom: 3px double #E8CD07;
 	}
-#sub, #sub2 {
+#border1, #border2, #border3 {
 	word-spacing: .2px;
-	letter-spacing: .75px;
-	padding-bottom: 80px;
-	background: url(../images/twobirds.png) no-repeat;}
+	letter-spacing: .75px;	
+	padding-bottom: 105px;
+	}
+
+#border1 {
+	background: url(../images/star.png) no-repeat;
+	}
+
+#border2 {
+	background: url(../images/twobirds.png) no-repeat;
+	border-left: 1px solid #E8CD07;
+	}
+
+#border3 {
+	background: url(../images/house.png) no-repeat;
+	border-left: 1px solid #E8CD07;}	
 	
-#sub {padding-top: 31px; }
+#service {padding-bottom:30px;
+	border-top: 1px double #E8CD07;}	
+	
+#sub, #sub2 {padding-top: 31px; }	
+
+/*#border1 {border-left: 1px solid #E8CD07;}*/
 
 /*
 ** Formatting for administration page

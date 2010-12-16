@@ -33,16 +33,16 @@
             <?php endif; ?>
            
             </div> -->
-
-
-    <?php if ($search_box): ?>
-      <div id="search-box" class="grid-6 prefix-10"><?php print $search_box; ?></div>
-    <?php endif; ?>
+          
+      <div id="search-box" class="grid-3 push-4">
+      <?php print $service_links; ?>
+      <?php print $search_box; ?></div>
+ 
     </div>
 
 
     <div id="site-subheader" class="prefix-2 clear-block alpha">
-    <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div> 
+    <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?>  </div> 
 
     </div>
 
@@ -72,18 +72,30 @@
        <div id="sub" class="grid-3 suffix-1"> 
               <h4 id="subtitle">
                <?php print $node->content['field_take_care']['field']['#title'] ?> </h4>
-            <?php echo $node->field_lets_talk[0]['view'];?> </div>
+             </div>
        <div id="sub2" class="grid-3 prefix-1 suffix-1">
            <h4 id="subtitle">
              <?php print $node->content['field_lets_talk']['field']['#title'] ?> </h4>
-            <?php echo $node->field_take_care[0]['view'];?></div>
+            </div>
        <div id="sub3" class="grid-3 prefix-1">
             <h4 id="subtitle">
             <?php print $node->content['field_whichwayhome']['field']['#title'] ?> </h4>
-            <?php echo $node->field_whichwayhome[0]['view'];?></div>
+          </div>
        
- 
      </div>
+     <div class="grid-15 push-2 clear-block alpha">
+        <div id="border1" class="grid-3 suffix-1"> 
+            
+                       <?php echo $node->field_lets_talk[0]['view'];?> </div>
+        <div id="border2" class="grid-3 prefix-1 suffix-1">
+         
+                      <?php echo $node->field_take_care[0]['view'];?></div>
+        <div id="border3" class="grid-3 prefix-1">
+          
+                <?php echo $node->field_whichwayhome[0]['view'];?></div>
+
+
+      </div>
 
   <!-- <?php if ($left): ?>
      <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $right, 3); ?>">
@@ -101,7 +113,7 @@
  <div id="footer" class="prefix-1 suffix-1">
     
         <div id="footer-region" class="region grid-12 push-1 clear-block">
-        <?php print $footer; ?>
+        <?php print $footer; ?>  
         </div>
       
 
