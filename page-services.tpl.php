@@ -37,7 +37,8 @@
 
             <div id="search-box" class="grid-6 push-4">
             <?php print $service_links; ?>
-            <?php print $search_box; ?></div>
+            <?php print $search_box; ?>
+            <?php print $header?></div>
     </div>
 
 

@@ -25,19 +25,23 @@ border-top: 3px double #E8CD07;
 	text-align:left;
 	float:left;
 	}
+#down {padding-top:40px;
+	float:right
+	padding-bottom:5px;}
+	
 /* the .fom-item is to get rid of the search box text. this is a temporary solution only*/
-.form-item {
+/*.form-item {
 		color:#fff;
 		margin-bottom:2px;
 		}		
-		
+		*/
 #image {float:right;}
 
 #body {background-color: #fff;}
 
 #branding {
 	height: 	150px; 
-	background: url(../images/janettitle3.png) no-repeat;
+	background: url(../images/janettitleO.jpg) no-repeat;
 	}
 #site-slogan {
 	padding-top: 88px;
@@ -48,7 +52,7 @@ border-top: 3px double #E8CD07;
 #border1, #border2, #border3 {
 	word-spacing: .2px;
 	letter-spacing: .75px;	
-	padding-bottom: 105px;
+	padding-bottom: 135px;
 	}
 
 #border1 {
