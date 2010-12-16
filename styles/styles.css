@@ -18,7 +18,11 @@ h1#site-name {
 
 #footer-region{
   margin-top: 3.75em; 
-border-top: 3px double #E8CD07;
+border-top: 3px double #E8CD07;}
+
+#footer-message {
+background: url(../images/footerback.jpg) no-repeat;
+padding-bottom:50px;
 }
 #search-box {
 	padding-top:30px;

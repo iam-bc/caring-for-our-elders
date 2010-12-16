@@ -33,11 +33,14 @@
             <?php endif; ?>
            
             </div> -->
-          
-      <div id="search-box" class="grid-3 push-4">
+    <div id="down" class="grid-2 push-2"> 
+           <?php $block = module_invoke('text_resize' ,'block', 'view', 0);?>
+            <?php print $block['content']; ?></div>  
+      <div id="search-box" class="grid-4 push-2">
       <?php print $service_links; ?>
       <?php print $search_box; ?></div>
- 
+      
+        
     </div>
 
 
@@ -58,7 +61,7 @@
       <?php print $messages; ?>
       <?php print $help; ?>
 
-      <div id="main-content" class="region grid-12 prefix-2 suffix-2 alpha">
+      <div id="main-content" class="region grid-13 prefix-2 suffix-1 alpha">
        <?php print $content; ?>
           <!-- <?php print_r($node); ?> -->
          </div>
@@ -112,13 +115,13 @@
 
  <div id="footer" class="prefix-1 suffix-1">
     
-        <div id="footer-region" class="region grid-12 push-1 clear-block">
+        <div id="footer-region" class="region grid-14 push-1 clear-block">
         <?php print $footer; ?>  
         </div>
       
 
       <?php if ($footer_message): ?>
-        <div id="footer-message" class="grid-12 push-1">
+        <div id="footer-message" class="grid-14 push-1">
         <center><?php print $footer_message; ?> </center>
         </div>
       <?php endif; ?>
