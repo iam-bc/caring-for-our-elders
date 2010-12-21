@@ -35,10 +35,10 @@
             </div> -->
 
 
-            <div id="search-box" class="grid-6 push-4">
-            <?php print $service_links; ?>
+            <div id="search-box" class="grid-4 push-4">
+           
             <?php print $search_box; ?>
-            <?php print $header?></div>
+            </div>
     </div>
 
 
@@ -49,7 +49,7 @@
 
 
     <div id="main" class="column grid-16">
-      <?php print $breadcrumb; ?>
+      
       <?php if ($title): ?>
         <h1 class="title prefix-2" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
@@ -59,7 +59,7 @@
       <?php print $messages; ?>
       <?php print $help; ?>
 
-      <div id="main-content" class="region grid-12 prefix-2 suffix-2 alpha">
+      <div id="main-content" class="region grid-13 prefix-2 suffix-2 alpha">
        <?php print $content; ?>
           <!-- <?php print_r($node); ?> -->
          </div>
@@ -69,24 +69,27 @@
       <?php print $feed_icons; ?>
     </div>
     
-    <div id="sub-content" class="grid-12 push-2 clear-block alpha">
+    <div id="sub-content" class="grid-14 push-2 clear-block alpha">
       <div id="linkimage" class="grid-2">
           <?php echo $node->field_imagelink1[0]['view'];?></div>
-       <div id="service" class="grid-9"> 
+       <div id="service" class="grid-11"> 
               <h4 id="subtitle2">
                <?php print $node->content['field_caremanage']['field']['#title'] ?> </h4>
+                <h5 id="subsub"><?php echo $node->field_tag1[0]['view'];?></h5>
             <?php echo $node->field_caremanage[0]['view'];?> </div>
         <div id="linkimage" class="grid-2"> 
         <?php echo $node->field_imagelink2[0]['view'];?></div>
-       <div id="service" class="grid-9">
+       <div id="service" class="grid-11">
            <h4 id="subtitle2">
              <?php print $node->content['field_housing']['field']['#title'] ?> </h4>
+              <h5 id="subsub"><?php echo $node->field_tag2[0]['view'];?></h5>
             <?php echo $node->field_housing[0]['view'];?></div>
       <div id="linkimage" class="grid-2">
           <?php echo $node->field_imagelink3[0]['view'];?></div>
-       <div id="service" class="grid-9">
+       <div id="service" class="grid-11">
             <h4 id="subtitle2">
             <?php print $node->content['field_communication']['field']['#title'] ?> </h4>
+             <h5 id="subsub"><?php echo $node->field_tag3[0]['view'];?></h5>
             <?php echo $node->field_communication[0]['view'];?></div>
        
  
@@ -105,20 +108,21 @@
    <?php endif; ?> -->
  
 
- <div id="footer" class="prefix-1 suffix-1">
-    
-        <div id="footer-region" class="region grid-12 push-1 clear-block">
-        <?php print $footer; ?>
-        </div>
-      
+   <div id="footer" class="prefix-1 suffix-1">
 
-      <?php if ($footer_message): ?>
-        <div id="footer-message" class="grid-12 push-1">
-        <center><?php print $footer_message; ?> </center>
-        </div>
-      <?php endif; ?>
-    </div> 
-  
+           <div id="footer-region" class="region grid-14 push-1 clear-block">
+           <?php print $footer; ?>  
+           </div>
+
+
+         <?php if ($footer_message): ?>
+           <div id="footer-message" class="grid-14 push-1">
+           <center><?php print $footer_message; ?> </center>
+            <div class="grid-5 push-6 alpha"><?php print $service_links; ?></div>
+           </div>
+         <?php endif; ?>
+
+       </div>
 
   </div>
   <?php print $closure; ?>
