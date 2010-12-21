@@ -33,11 +33,9 @@
             <?php endif; ?>
            
             </div> -->
-    <div id="down" class="grid-2 push-2"> 
-           <?php $block = module_invoke('text_resize' ,'block', 'view', 0);?>
-            <?php print $block['content']; ?></div>  
-      <div id="search-box" class="grid-4 push-2">
-      <?php print $service_links; ?>
+
+      <div id="search-box" class="grid-4 push-4">
+     
       <?php print $search_box; ?></div>
       
         
@@ -52,9 +50,7 @@
 
     <div id="main" class="column grid-16">
       <?php print $breadcrumb; ?>
-      <?php if ($title): ?>
-        <h1 class="title prefix-2" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
+      
       <?php if ($tabs): ?>
         <div class="tabs"><?php print $tabs; ?></div>
       <?php endif; ?>
@@ -62,7 +58,9 @@
       <?php print $help; ?>
 
       <div id="main-content" class="region grid-13 prefix-2 suffix-1 alpha">
-       <?php print $content; ?>
+         <div id="image" ><?php print $node->content['image_attach']['#value']; ?></div>
+           <h1 class="page-title"><?php print $title; ?></h1>
+     <?php print $node->content['body']['#value']; ?>
           <!-- <?php print_r($node); ?> -->
          </div>
          
@@ -88,14 +86,14 @@
      </div>
      <div class="grid-15 push-2 clear-block alpha">
         <div id="border1" class="grid-3 suffix-1"> 
-            
-                       <?php echo $node->field_lets_talk[0]['view'];?> </div>
+                       <?php echo $node->field_lets_talk[0]['view'];?>
+                       <?php echo $node->field_image1[0]['view'];?> </div>
         <div id="border2" class="grid-3 prefix-1 suffix-1">
-         
-                      <?php echo $node->field_take_care[0]['view'];?></div>
+                      <?php echo $node->field_take_care[0]['view'];?>
+                      <?php echo $node->field_image2[0]['view'];?></div>
         <div id="border3" class="grid-3 prefix-1">
-          
-                <?php echo $node->field_whichwayhome[0]['view'];?></div>
+                     <?php echo $node->field_whichwayhome[0]['view'];?>
+                     <?php echo $node->field_image3[0]['view'];?></div>
 
 
       </div>
@@ -123,8 +121,10 @@
       <?php if ($footer_message): ?>
         <div id="footer-message" class="grid-14 push-1">
         <center><?php print $footer_message; ?> </center>
+         <div class="grid-5 push-6 alpha"><?php print $service_links; ?></div>
         </div>
       <?php endif; ?>
+     
     </div> 
   
 

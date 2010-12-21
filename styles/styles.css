@@ -30,7 +30,7 @@ padding-bottom:50px;
 	float:left;
 	}
 #down {padding-top:40px;
-	float:right
+	float:right;
 	padding-bottom:5px;}
 	
 /* the .fom-item is to get rid of the search box text. this is a temporary solution only*/
@@ -45,7 +45,7 @@ padding-bottom:50px;
 
 #branding {
 	height: 	150px; 
-	background: url(../images/janettitleO.jpg) no-repeat;
+	background: url(../images/janettitleflower.png) no-repeat;
 	}
 #site-slogan {
 	padding-top: 88px;
@@ -57,19 +57,14 @@ padding-bottom:50px;
 	word-spacing: .2px;
 	letter-spacing: .75px;	
 	padding-bottom: 135px;
-	}
-
-#border1 {
-	background: url(../images/star.png) no-repeat;
+	text-align:left;
 	}
 
 #border2 {
-	background: url(../images/twobirds.png) no-repeat;
 	border-left: 1px solid #E8CD07;
 	}
 
 #border3 {
-	background: url(../images/house.png) no-repeat;
 	border-left: 1px solid #E8CD07;}	
 	
 #service {padding-bottom:30px;
