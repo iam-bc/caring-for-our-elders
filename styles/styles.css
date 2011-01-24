@@ -13,7 +13,7 @@ h1#site-name {
 }
 
 #site-subheader {
-  margin-bottom: 2.75em;
+  margin-bottom: 2em;
 }
 
 #footer-region{
@@ -21,13 +21,12 @@ h1#site-name {
 border-top: 3px double #E8CD07;}
 
 #footer-message {
-background: url(../images/footerback.jpg) no-repeat;
-padding-bottom:50px;
+background: url(../images/footerback2.jpg) no-repeat;
+padding-bottom: 50px;
 }
-#search-box {
+#foot {
 	padding-top:30px;
-	text-align:right;
-	float:left;
+	text-align:center;
 	}
 #down {padding-top:40px;
 	float:right;
@@ -44,8 +43,8 @@ padding-bottom:50px;
 #body {background-color: #fff;}
 
 #branding {
-	height: 	150px; 
-	background: url(../images/janettitleflower.png) no-repeat;
+	height: 	140px; 
+	background: url(../images/janet.png) no-repeat;
 	}
 #site-slogan {
 	padding-top: 88px;
@@ -56,7 +55,6 @@ padding-bottom:50px;
 #border1, #border2, #border3 {
 	word-spacing: .2px;
 	letter-spacing: .75px;	
-	padding-bottom: 135px;
 	text-align:left;
 	}
 
@@ -65,12 +63,20 @@ padding-bottom:50px;
 	}
 
 #border3 {
-	border-left: 1px solid #E8CD07;}	
+	border-left: 1px solid #E8CD07;
+	padding-bottom: 10px;}	
 	
 #service {padding-bottom:30px;
 	border-top: 1px double #E8CD07;}	
+
+#servicelinks {padding-top: 40px;}
+	
 	
 #sub, #sub2 {padding-top: 31px; }	
+
+#line {background: url(../images/line.jpg);
+	color:#fff;
+	height:220px;}
 
 /*#border1 {border-left: 1px solid #E8CD07;}*/
 
@@ -102,7 +108,7 @@ div.admin .right .admin-panel {
 
 .node .image-attach-body {
   float: right;
-  margin-left: 1.5em;
+  margin-left: 2.5em;
 }
 .node .image-attach-teaser {
   float: right;
@@ -115,3 +121,5 @@ div.admin .right .admin-panel {
   background-color:#FFF4F4;
   padding: 1em;
 }
+
+#image{padding-left: 1.7em;}
